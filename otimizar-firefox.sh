@@ -10,7 +10,7 @@ killall firefox
 
 clear
 
-firefoxest="chepc6ja.default-1625676055365"
+firefoxest="7m2baab4.default-1641920849946"
 
 cd "/media/eu/Windows 10/Projetos/HTML e JS/TesteArquivos/_arquivos"
 
@@ -61,9 +61,9 @@ else
 fi
 
 if [ -d extensions/staged ]; then
-	rm -rf extensions/staged & echo "Diretório staged deletado!"
+	rm -rf extensions/staged
 else
-	echo "Diretório staged Não Encontrado"
+	echo "Diretório extensions/staged Não Encontrado"
 fi
 
 echo
@@ -79,7 +79,5 @@ echo
 if [ $iniciar = S ]||[ $iniciar = s ]; then
 	firefox about:memory about:addons; echo "Firefox inicializado, minimize a memória dele."; echo
 fi
-
-echo "Clique em Qualquer Tecla pra Fechar"
 
 read

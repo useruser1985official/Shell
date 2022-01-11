@@ -50,7 +50,7 @@ killall java
 
 killall ruby
 
-firefoxest="chepc6ja.default-1625676055365"
+firefoxest="7m2baab4.default-1641920849946"
 
 rm -f ~/.cache/mozilla/firefox/$firefoxest/cache2/entries/*
 
@@ -70,21 +70,21 @@ sudo apt clean -y
 
 sudo apt autoremove --purge -y
 
-sudo rm -rf /tmp/*
+# sudo rm -rf /tmp/*
 
-sudo rm -f /var/lib/dpkg/lock
+# sudo rm -f /var/lib/dpkg/lock
 
-sudo rm -f /var/lib/dpkg/lock-frontend
+# sudo rm -f /var/lib/dpkg/lock-frontend
 
-sudo rm -f /var/lib/apt/lists/lock
+# sudo rm -f /var/lib/apt/lists/lock
 
-sudo rm -f /var/lib/apt/lists/lock-frontend
+# sudo rm -f /var/lib/apt/lists/lock-frontend
 
-sudo rm  -rf /var/backups/*
+# sudo rm  -rf /var/backups/*
 
-sudo rm  -rf /var/tmp/*
+# sudo rm  -rf /var/tmp/*
 
-sudo find /var/log \( -iname "*.old" -o -iname "*.gz" -o -iname "*.xz" -o -iname "*.1" \) -delete
+# sudo find /var/log \( -iname "*.old" -o -iname "*.gz" -o -iname "*.xz" -o -iname "*.1" \) -delete
 
 sudo sync
 
