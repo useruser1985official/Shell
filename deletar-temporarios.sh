@@ -8,6 +8,12 @@ else
 	exit
 fi
 
+clear
+
+read -p "Deseja limpar o cache dos navegadores? [S/N] " nav
+
+clear
+
 echo -n "Parando serviços desnecessários. Aguarde..."
 
 sudo service apache2 stop
@@ -32,45 +38,113 @@ sudo service ssh-agent stop
 
 clear
 
-killall firefox
-
-killall chrome
-
-killall opera
-
-killall tor
-
 killall python
 
+killall pythonw
+
 killall python3
+
+killall pythonw3
 
 killall perl
 
 killall java
 
+killall javaw
+
 killall ruby
 
-firefoxest="7m2baab4.default-1641920849946"
+killall VirtualBox
 
-rm -f ~/.cache/mozilla/firefox/$firefoxest/cache2/entries/*
+killall VBoxSVC
 
-rm -f ~/.cache/mozilla/firefox/$firefoxest/OfflineCache/*
+killall gpg
 
-rm -f ~/.cache/mozilla/firefox/$firefoxest/extensions/staged/*
+killall code
 
-rm -f ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/*
+killall netbeans64
 
-rm ~/.mozilla/firefox/$firefoxest/user.js
+killall pycharm64
 
-rm ~/.mozilla/firefox/$firefoxest/invalidprefs.js
+killall studio64
 
-sudo apt-get autoclean
+killall codeblocks
+
+killall pgAdmin4
+
+killall postgres
+
+killall sqlite3
+
+killall sqlitestudio
+
+killall qtcreator
+
+killall nmap
+
+killall zenmap
+
+killall wireshark
+
+killall git
+
+if [ $nav = s ]||[ $nav = S ]; then
+	killall firefox
+
+	killall chrome
+
+	killall opera
+
+	killall msedge
+
+	killall tor
+
+	killall skype
+
+	firefoxest="7m2baab4.default-1641920849946"
+
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/cache2/entries/*
+
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/OfflineCache/*
+
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/staged/*
+
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/*
+
+	rm -f ~/.mozilla/firefox/$firefoxest/user.js
+
+	rm -f ~/.mozilla/firefox/$firefoxest/invalidprefs.js
+
+	rm -rf ~/.config/microsoft-edge/Default/Cache/*
+
+	rm -rf ~/.config/microsoft-edge/Default/GPUCache/*
+
+	rm -rf ~/.config/microsoft-edge/Default/CacheStorage/*
+
+	rm -rf ~/.config/microsoft-edge/Default/File System/*
+
+	rm -rf ~/.config/google-chrome/Default/Cache/*
+
+	rm -rf ~/.config/google-chrome/Default/GPUCache/*
+
+	rm -rf ~/.config/google-chrome/Default/CacheStorage/*
+
+	rm -rf ~/.config/google-chrome/Default/File System/*
+
+	rm -rf ~/.config/opera/cache/*
+
+	rm -rf ~/.config/opera/GPUCache/*
+
+	rm -rf ~/.config/opera/ShaderCache/*
+fi
+
+sudo apt autoclean
 
 sudo apt clean -y
 
 sudo apt autoremove --purge -y
 
-# sudo rm -rf /tmp/*
+sudo rm -rf /tmp/*
 
 # sudo rm -f /var/lib/dpkg/lock
 
@@ -100,6 +174,10 @@ if [ $opc = S ]||[ $opc = s ]; then
 	sudo e4defrag /
 else
 	echo "Defrag não Executado!"
+fi
+
+if [ $nav = s ]||[ $nav = S ]; then
+	echo "O cache dos navegadores foram limpos!"
 fi
 
 echo

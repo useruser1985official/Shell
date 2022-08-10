@@ -13,7 +13,7 @@ cd ~/Downloads
 ext=`ls | grep jpg`
 
 if [[ $ext ]]; then
-	mv *.jpg "/media/eu/Windows 10/Users/eu/Downloads"
+	mv -i *.jpg "/media/eu/Windows_10/Users/eu/Downloads"
 else
 	echo "Nenhuma imagem .jpg encontrada."
 fi
@@ -21,7 +21,7 @@ fi
 ext=`ls | grep jpeg`
 
 if [[ $ext ]]; then
-	mv *.jpeg "/media/eu/Windows 10/Users/eu/Downloads"
+	mv -i *.jpeg "/media/eu/Windows_10/Users/eu/Downloads"
 else
 	echo "Nenhuma imagem .jpeg encontrada."
 fi
@@ -29,7 +29,7 @@ fi
 ext=`ls | grep png`
 
 if [[ $ext ]]; then
-	mv *.png "/media/eu/Windows 10/Users/eu/Downloads"
+	mv -i *.png "/media/eu/Windows_10/Users/eu/Downloads"
 else
 	echo "Nenhuma imagem .png encontrada."
 fi
@@ -37,7 +37,45 @@ fi
 ext=`ls | grep gif`
 
 if [[ $ext ]]; then
-	mv *.gif "/media/eu/Windows 10/Users/eu/Downloads"
+	mv -i *.gif "/media/eu/Windows_10/Users/eu/Downloads"
+else
+	echo "Nenhuma imagem .gif encontrada."
+fi
+
+echo
+
+read -p "Deseja apagar as fotos não transferidas? [S/N] " opc
+
+echo
+
+ext=`ls | grep jpg`
+
+if [[ $ext ]]; then
+	rm -f *.jpg
+else
+	echo "Nenhuma imagem .jpg encontrada."
+fi
+
+ext=`ls | grep jpeg`
+
+if [[ $ext ]]; then
+	rm -f *.jpeg
+else
+	echo "Nenhuma imagem .jpeg encontrada."
+fi
+
+ext=`ls | grep png`
+
+if [[ $ext ]]; then
+	rm -f *.png
+else
+	echo "Nenhuma imagem .png encontrada."
+fi
+
+ext=`ls | grep gif`
+
+if [[ $ext ]]; then
+	rm -f *.gif
 else
 	echo "Nenhuma imagem .gif encontrada."
 fi
@@ -45,7 +83,7 @@ fi
 ext=`ls | grep webp`
 
 if [[ $ext ]]; then
-	mv *.webp "/media/eu/Windows 10/Users/eu/Downloads"
+	rm -f *.webp
 else
 	echo "Nenhuma imagem .webp encontrada."
 fi

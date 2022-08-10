@@ -12,7 +12,7 @@ clear
 
 firefoxest="7m2baab4.default-1641920849946"
 
-cd "/media/eu/Windows 10/Projetos/HTML e JS/TesteArquivos/_arquivos"
+cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/_arquivos"
 
 cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
 
