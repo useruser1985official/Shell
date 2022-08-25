@@ -36,6 +36,8 @@ sudo service ssh stop
 
 sudo service ssh-agent stop
 
+sudo service tor stop
+
 clear
 
 killall python
@@ -143,6 +145,8 @@ sudo apt autoclean
 sudo apt clean -y
 
 sudo apt autoremove --purge -y
+
+sudo rm -r /var/lib/apt/lists/* -vf
 
 sudo rm -rf /tmp/*
 
