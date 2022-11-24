@@ -34,8 +34,6 @@ sudo service rsync stop
 
 sudo service ssh stop
 
-sudo service ssh-agent stop
-
 sudo service tor stop
 
 clear
