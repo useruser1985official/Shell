@@ -87,3 +87,11 @@ if [[ $ext ]]; then
 else
 	echo "Nenhuma imagem .webp encontrada."
 fi
+
+ext=`ls | grep avif`
+
+if [[ $ext ]]; then
+	rm -f *.avif
+else
+	echo "Nenhuma imagem .avif encontrada."
+fi
