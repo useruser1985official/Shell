@@ -14,54 +14,54 @@ firefoxest="7m2baab4.default-1641920849946"
 
 cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/_arquivos"
 
-cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
+sudo cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
 
 cd "/home/eu/.mozilla/firefox/$firefoxest"
 
 if [ -f prefs.js.BAK ]; then
-	rm -f prefs.js.BAK & echo "Arquivo prefs.js.BAK deletado!"
+	rm -f prefs.js.BAK && echo "Arquivo prefs.js.BAK deletado!"
 else
 	echo "Arquivo prefs.js.BAK não encontrado!"
 fi
 
 if [ -f user.js ]; then
-	rm -f user.js & echo "Arquivo user.js deletado!"
+	rm -f user.js && echo "Arquivo user.js deletado!"
 else
 	echo "Arquivo user.js não encontrado!"
 fi
 
 if [ -f user.js.BAK ]; then
-	rm -f user.js.BAK & echo "Arquivo user.js.BAK deletado!"
+	rm -f user.js.BAK && echo "Arquivo user.js.BAK deletado!"
 else
 	echo "Arquivo user.js.BAK não encontrado!"
 fi
 
 if [ -f prefs1.js ]; then
-	rm -f prefs1.js & echo "Arquivo prefs1.js deletado!"
+	rm -f prefs1.js && echo "Arquivo prefs1.js deletado!"
 else
 	echo "Arquivo prefs1.js não encontrado!"
 fi
 
 if [ -f prefs_*.* ]; then
-	rm -f prefs_*.* & echo "Arquivo prefs_*.* deletado!"
+	rm -f prefs_*.* && echo "Arquivo prefs_*.* deletado!"
 else
 	echo "Arquivo prefs_*.* não encontrado!"
 fi
 
 if [ -f prefs-*.* ]; then
-	rm -f prefs-*.* & echo "Arquivo prefs-*.* deletado!"
+	rm -f prefs-*.* && echo "Arquivo prefs-*.* deletado!"
 else
 	echo "Arquivo prefs_*.* não encontrado!"
 fi
 
 if [ -f invalidprefs.js ]; then
-	rm -f invalidprefs.js & echo "Arquivo invalidprefs.js deletado!"
+	rm -f invalidprefs.js && echo "Arquivo invalidprefs.js deletado!"
 else
 	echo "Arquivo invalidprefs.js não encontrado!"
 fi
 
 if [ -d extensions/staged ]; then
-	rm -rf extensions/staged
+	rm -rf extensions/staged && echo "Diretório extensions/staged deletado!"
 else
 	echo "Diretório extensions/staged Não Encontrado"
 fi
