@@ -25,3 +25,21 @@ if [[ $ext ]]; then
 else
 	echo "Nenhum instalador .msi encontrado."
 fi
+
+echo
+
+read -p "Arquivos zipados também? [S/N] " opc
+
+if [ $opc = S ]||[ $opc = s ]; then
+	echo
+else
+	exit
+fi
+
+ext=`ls | grep zip`
+
+if [[ $ext ]]; then
+	mv *.zip "/media/eu/Windows_10/Users/eu/Downloads"
+else
+	echo "Nenhum arquivo .zip encontrado."
+fi
