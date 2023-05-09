@@ -2,7 +2,7 @@
 
 read -p "Deseja corrigir todos os erros de script do Firefox? [S/N] " otimizar
 
-if [ $otimizar -ne S ]&&[ $otimizar -ne s ]; then
+if [ $otimizar != S ]&&[ $otimizar != s ]; then
 	exit
 fi
 
@@ -63,7 +63,7 @@ fi
 if [ -d extensions/staged ]; then
 	rm -rf extensions/staged && echo "Diretório extensions/staged deletado!"
 else
-	echo "Diretório extensions/staged Não Encontrado"
+	echo "Diretório extensions/staged não encontrado!"
 fi
 
 echo

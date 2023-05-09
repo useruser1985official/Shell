@@ -107,7 +107,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/OfflineCache/*
 
-	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/staged/*
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/staged/
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/*
 
