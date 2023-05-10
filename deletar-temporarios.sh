@@ -86,6 +86,8 @@ killall zenmap
 
 killall wireshark
 
+killall PacketTracer
+
 killall git
 
 if [ $nav = s ]||[ $nav = S ]; then
