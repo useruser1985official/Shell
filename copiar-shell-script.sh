@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Deseja mover os scripts SH para a pasta especificada? [S/N] " shell
+read -p "Deseja copiar os scripts SH para a pasta especificada? [S/N] " shell
 
 if [ $shell = S ]||[ $shell = s ]; then
 	echo

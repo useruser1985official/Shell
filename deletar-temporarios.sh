@@ -86,6 +86,8 @@ killall zenmap
 
 killall wireshark
 
+killall transmission-gt
+
 killall PacketTracer
 
 killall git
