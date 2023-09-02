@@ -70,14 +70,10 @@ echo
 
 read -p "Deseja iniciar o Firefox agora? [S/N] " iniciar
 
-clear
-
 rm -f "/home/eu/.cache/mozilla/firefox/$firefoxest/cache2/entries/*"
 
-echo
+clear
 
 if [ $iniciar = S ]||[ $iniciar = s ]; then
-	firefox about:memory about:addons; echo "Firefox inicializado, minimize a memória dele."; echo
+	firefox about:memory about:addons; echo "Firefox inicializado, minimize a memória dele."
 fi
-
-read
