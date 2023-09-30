@@ -75,5 +75,7 @@ rm -f "/home/eu/.cache/mozilla/firefox/$firefoxest/cache2/entries/*"
 clear
 
 if [ $iniciar = S ]||[ $iniciar = s ]; then
-	firefox about:memory about:addons; echo "Firefox inicializado, minimize a memória dele."
+	firefox about:memory about:addons; clear; echo "Firefox inicializado, minimize a memória dele."
+else
+	clear
 fi
