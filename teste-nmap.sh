@@ -8,7 +8,7 @@ else
 	exit
 fi
 
-sudo nmap -T4 -A -v 108.62.116.26
+sudo nmap -T4 -A -v 65.181.111.169
 
 sudo nmap -T4 -A -v 185.239.210.29
 
