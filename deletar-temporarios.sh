@@ -68,6 +68,8 @@ killall pycharm64
 
 killall studio64
 
+killall SceneBuilder 
+
 killall codeblocks
 
 killall pgAdmin4
@@ -89,6 +91,8 @@ killall wireshark
 killall transmission-gt
 
 killall PacketTracer
+
+killall mysql-workbench
 
 killall git
 
