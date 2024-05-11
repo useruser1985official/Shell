@@ -10,7 +10,7 @@ killall firefox
 
 clear
 
-firefoxest="b9cp8u6y.default-1712770474420"
+firefoxest="123xepla.default-1715384000571"
 
 cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/_arquivos"
 
