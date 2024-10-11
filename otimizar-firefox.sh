@@ -10,9 +10,9 @@ killall firefox
 
 clear
 
-firefoxest="123xepla.default-1715384000571"
+firefoxest="jej5dy6o.default-1727965583869"
 
-cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/_arquivos"
+cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/arquivos"
 
 sudo cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
 
