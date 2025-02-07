@@ -109,7 +109,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	killall skype
 
-	firefoxest="jej5dy6o.default-1727965583869"
+	firefoxest="gorrmqcs.default-1738104173830"
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/cache2/entries/*
 
