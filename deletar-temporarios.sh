@@ -52,7 +52,15 @@ killall java
 
 killall javaw
 
+killall javac
+
 killall ruby
+
+killall node
+
+killall kotlin
+
+killall kotlinc
 
 killall VirtualBox
 
@@ -62,11 +70,13 @@ killall gpg
 
 killall code
 
-killall netbeans64
+killall netbeans
 
-killall pycharm64
+killall pycharm
 
-killall studio64
+killall studio
+
+killall idea
 
 killall SceneBuilder 
 
