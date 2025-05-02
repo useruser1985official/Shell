@@ -10,6 +10,8 @@ fi
 
 sudo nmap -T4 -A -v 65.181.111.13
 
+sudo nmap -T4 -A -v 89.116.213.67
+
 clear
 
 echo "Operação Concluída com Êxito!"
