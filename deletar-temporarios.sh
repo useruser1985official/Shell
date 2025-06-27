@@ -133,6 +133,8 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	rm -f ~/.mozilla/firefox/$firefoxest/invalidprefs.js
 
+    rm -f ~/.mozilla/firefox/$firefoxest/Invalidprefs.js
+
 	rm -rf ~/.config/microsoft-edge/Default/Cache/*
 
 	rm -rf ~/.config/microsoft-edge/Default/GPUCache/*

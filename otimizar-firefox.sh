@@ -56,6 +56,8 @@ fi
 
 if [ -f invalidprefs.js ]; then
 	rm -f invalidprefs.js && echo "Arquivo invalidprefs.js deletado!"
+elif [ -f Invalidprefs.js ]; then
+	rm -f Invalidprefs.js && echo "Arquivo Invalidprefs.js deletado!"
 else
 	echo "Arquivo invalidprefs.js não encontrado!"
 fi
