@@ -127,3 +127,7 @@ apt install strace -y
 apt install objdump -y
 
 apt install ht -y
+
+cd ~
+
+git clone https://github.com/sqlmapproject/sqlmap.git
