@@ -12,9 +12,9 @@ fi
 sudo nmap -T4 -A -v 65.181.111.13
 
 # F:
-sudo nmap -T4 -A -v 77.37.42.118
+sudo nmap -T4 -A -v 147.79.105.244
 
-sudo nmap -T4 -A -v 91.108.127.201
+sudo nmap -T4 -A -v 89.116.213.143
 
 sudo nmap -T4 -A -v 147.93.14.189
 
