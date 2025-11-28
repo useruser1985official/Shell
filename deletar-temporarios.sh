@@ -38,86 +38,88 @@ sudo service tor stop
 
 clear
 
-killall python
+sudo killall python
 
-killall pythonw
+sudo killall pythonw
 
-killall python3
+sudo killall python3
 
-killall pythonw3
+sudo killall pythonw3
 
-killall perl
+sudo killall perl
 
-killall java
+sudo killall java
 
-killall javaw
+sudo killall javaw
 
-killall javac
+sudo killall javac
 
-killall ruby
+sudo killall ruby
 
-killall node
+sudo killall node
 
-killall kotlin
+sudo killall kotlin
 
-killall kotlinc
+sudo killall kotlinc
 
-killall VirtualBox
+sudo killall VirtualBox
 
-killall VBoxSVC
+sudo killall VBoxSVC
 
-killall gpg
+sudo killall gpg
 
-killall code
+sudo killall code
 
-killall netbeans
+sudo killall netbeans
 
-killall pycharm
+sudo killall pycharm
 
-killall studio
+sudo killall studio
 
-killall idea
+sudo killall idea
 
-killall SceneBuilder 
+sudo killall SceneBuilder 
 
-killall codeblocks
+sudo killall codeblocks
 
-killall pgAdmin4
+sudo killall pgAdmin4
 
-killall postgres
+sudo killall postgres
 
-killall sqlite3
+sudo killall sqlite3
 
-killall sqlitestudio
+sudo killall sqlitestudio
 
-killall qtcreator
+sudo killall qtcreator
 
-killall nmap
+sudo killall nmap
 
-killall zenmap
+sudo killall zenmap
 
-killall wireshark
+sudo killall wireshark
 
-killall transmission-gt
+sudo killall transmission-gt
 
-killall PacketTracer
+sudo killall PacketTracer
 
-killall mysql-workbench
+sudo killall linssid
 
-killall git
+sudo killall mysql-workbench
+
+sudo killall git
 
 if [ $nav = s ]||[ $nav = S ]; then
-	killall firefox
+	sudo killall firefox
 
-	killall chrome
+	sudo killall chrome
 
-	killall opera
+	sudo killall opera
 
-	killall msedge
+	sudo killall msedge
 
-	killall tor
+	sudo killall tor
 
-	killall skype
+	sudo killall skype
 
 	firefoxest="gorrmqcs.default-1738104173830"
 

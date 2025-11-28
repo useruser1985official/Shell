@@ -12,7 +12,7 @@ clear
 
 firefoxest="gorrmqcs.default-1738104173830"
 
-cd "/media/eu/Windows_10/Projetos/HTML e JS/TesteArquivos/arquivos"
+cd "/media/eu/Windows_10/Projetos/Front/TesteArquivos/arquivos"
 
 sudo cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
 
