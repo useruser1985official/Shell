@@ -10,7 +10,7 @@ killall firefox
 
 clear
 
-firefoxest="gorrmqcs.default-1738104173830"
+firefoxest="tx60jb2h.default-1764853437342"
 
 cd "/media/eu/Windows_10/Projetos/Front/TesteArquivos/arquivos"
 
@@ -72,7 +72,7 @@ echo
 
 read -p "Deseja iniciar o Firefox agora? [S/N] " iniciar
 
-rm -f "/home/eu/.cache/mozilla/firefox/$firefoxest/cache2/entries/*"
+rm -f "/home/eu/.cache/mozilla/firefox/$firefoxest/Cache2/*"
 
 clear
 
