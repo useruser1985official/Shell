@@ -121,7 +121,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	sudo killall skype
 
-	firefoxest="tx60jb2h.default-1764853437342"
+	firefoxest="4o9lfgwh.default-1767886082070"
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/Cache2/*
 
