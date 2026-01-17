@@ -10,13 +10,13 @@ killall firefox
 
 clear
 
-firefoxest="4o9lfgwh.default-1767886082070"
+firefoxest="7ptpjkns.default-release-1768583593917"
 
 cd "/media/eu/Windows_10/Projetos/Front/TesteArquivos/arquivos"
 
-sudo cp -f prefs.js "/home/eu/.mozilla/firefox/$firefoxest"
+sudo cp -f prefs.js "/home/eu/.config/mozilla/firefox/$firefoxest"
 
-cd "/home/eu/.mozilla/firefox/$firefoxest"
+cd "/home/eu/.config/mozilla/firefox/$firefoxest"
 
 if [ -f prefs.js.BAK ]; then
 	rm -f prefs.js.BAK && echo "Arquivo prefs.js.BAK deletado!"

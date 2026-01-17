@@ -121,7 +121,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	sudo killall skype
 
-	firefoxest="4o9lfgwh.default-1767886082070"
+	firefoxest="7ptpjkns.default-release-1768583593917"
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/Cache2/*
 
@@ -131,11 +131,11 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/*
 
-	rm -f ~/.mozilla/firefox/$firefoxest/user.js
+	rm -f ~/.config/mozilla/firefox/$firefoxest/user.js
 
-	rm -f ~/.mozilla/firefox/$firefoxest/invalidprefs.js
+	rm -f ~/.config/mozilla/firefox/$firefoxest/invalidprefs.js
 
-    rm -f ~/.mozilla/firefox/$firefoxest/Invalidprefs.js
+    rm -f ~/.config/mozilla/firefox/$firefoxest/Invalidprefs.js
 
 	rm -rf ~/.config/microsoft-edge/Default/Cache/*
 
