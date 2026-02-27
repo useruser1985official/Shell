@@ -36,6 +36,8 @@ sudo service ssh stop
 
 sudo service tor stop
 
+sudo service docker stop
+
 clear
 
 sudo killall python
@@ -107,6 +109,10 @@ sudo killall linssid
 sudo killall mysql-workbench
 
 sudo killall git
+
+sudo killall "Docker Desktop"
+
+sudo killall com.docker.back
 
 if [ $nav = s ]||[ $nav = S ]; then
 	sudo killall firefox
