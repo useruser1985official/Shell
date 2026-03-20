@@ -8,8 +8,8 @@ else
 	exit
 fi
 
-# R:
-sudo nmap -T4 -A -v 65.181.111.13
+# E:
+sudo nmap -T4 -A -v 45.79.59.158
 
 # S:
 sudo nmap -T4 -A -v 172.67.221.192
