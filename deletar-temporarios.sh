@@ -135,7 +135,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/staged/
 
-	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/*
+	rm -rf ~/.cache/mozilla/firefox/$firefoxest/extensions/trash/
 
 	rm -f ~/.config/mozilla/firefox/$firefoxest/user.js
 
@@ -164,6 +164,10 @@ if [ $nav = s ]||[ $nav = S ]; then
 	rm -rf ~/.config/opera/GPUCache/*
 
 	rm -rf ~/.config/opera/ShaderCache/*
+
+	if [ -f /etc/apt/sources.list.d/google-chrome.sources ]; then
+		sudo rm /etc/apt/sources.list.d/google-chrome.sources
+	fi
 fi
 
 sudo apt autoclean

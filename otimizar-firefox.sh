@@ -68,6 +68,12 @@ else
 	echo "Diretório extensions/staged não encontrado!"
 fi
 
+if [ -d extensions/trash ]; then
+	rm -rf extensions/trash && echo "Diretório extensions/trash deletado!"
+else
+	echo "Diretório extensions/trash não encontrado!"
+fi
+
 echo
 
 read -p "Deseja iniciar o Firefox agora? [S/N] " iniciar

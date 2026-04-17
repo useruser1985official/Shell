@@ -128,6 +128,16 @@ apt install objdump -y
 
 apt install ht -y
 
+apt install sl -y
+
+apt install cowsay -y
+
+apt install fortune -y
+
+apt install lolcat -y
+
+apt install cmatrix -y
+
 cd ~
 
 git clone https://github.com/sqlmapproject/sqlmap.git
