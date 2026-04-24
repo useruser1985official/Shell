@@ -8,8 +8,19 @@ else
 	exit
 fi
 
+# R (2):
+sudo nmap -T4 -A -v 147.79.105.76
+
+sudo nmap -T4 -A -v 89.116.213.54
+
+sudo nmap -T4 -A -v 91.108.127.202
+
+sudo nmap -T4 -A -v 34.120.251.119
+
 # E:
 sudo nmap -T4 -A -v 45.79.59.158
+
+sudo nmap -T4 -A -v 34.102.239.211
 
 # S:
 sudo nmap -T4 -A -v 172.67.221.192

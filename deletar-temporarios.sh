@@ -110,9 +110,33 @@ sudo killall mysql-workbench
 
 sudo killall git
 
-sudo killall "Docker Desktop"
+sudo killall com.docker.backend
 
-sudo killall com.docker.back
+sudo killall com.docker.build
+
+sudo killall com.docker.backend
+
+sudo killall com.docker.build
+
+sudo killall docker-agent
+
+sudo killall docker-ai
+
+sudo killall docker-buildx
+
+sudo killall docker-debug
+
+sudo killall docker-desktop
+
+sudo killall docker-dhi
+
+sudo killall docker-mcp
+
+sudo killall docker-sandbox
+
+sudo killall docker-scout
+
+sudo killall "Docker Desktop"
 
 if [ $nav = s ]||[ $nav = S ]; then
 	sudo killall firefox
