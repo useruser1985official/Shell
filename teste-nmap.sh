@@ -9,9 +9,9 @@ else
 fi
 
 # R (2):
-sudo nmap -T4 -A -v 147.79.105.53
+sudo nmap -T4 -A -v 89.116.213.185
 
-sudo nmap -T4 -A -v 91.108.127.38
+sudo nmap -T4 -A -v 147.79.105.42
 
 sudo nmap -T4 -A -v 34.120.251.119
 
