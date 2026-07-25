@@ -80,6 +80,8 @@ sudo killall studio
 
 sudo killall idea
 
+sudo killall jetbrainsd
+
 sudo killall SceneBuilder 
 
 sudo killall codeblocks
@@ -149,6 +151,8 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	sudo killall tor
 
+	sudo killall thunderbird
+
 	sudo killall skype
 
 	firefoxest="7ptpjkns.default-release-1768583593917"
@@ -191,6 +195,22 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	if [ -f /etc/apt/sources.list.d/google-chrome.sources ]; then
 		sudo rm /etc/apt/sources.list.d/google-chrome.sources
+	fi
+
+	if [ -f /etc/apt/sources.list.d/google-chrome.list ]; then
+		echo "Arquivo de Atualização do Chrome Inalterado!"
+	else
+		sudo rm -f /etc/apt/sources.list.d/google-chrome.list
+
+		sudo rm -f /etc/apt/trusted.gpg.d/google-chrome.gpg
+
+		sudo mkdir -p /etc/apt/keyrings
+
+		curl -fsSL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor -o /etc/apt/keyrings/google-chrome.gpg
+
+		wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+
+		echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 	fi
 fi
 
