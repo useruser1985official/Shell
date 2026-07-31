@@ -155,7 +155,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	sudo killall skype
 
-	firefoxest="7ptpjkns.default-release-1768583593917"
+	firefoxest="82kiutnq.default-release-1785506103122"
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/Cache2/*
 
@@ -203,6 +203,8 @@ if [ $nav = s ]||[ $nav = S ]; then
 		sudo rm -f /etc/apt/sources.list.d/google-chrome.list
 
 		sudo rm -f /etc/apt/trusted.gpg.d/google-chrome.gpg
+
+		sudo rm -rf /etc/apt/keyrings
 
 		sudo mkdir -p /etc/apt/keyrings
 
