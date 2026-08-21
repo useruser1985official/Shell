@@ -10,7 +10,7 @@ killall firefox
 
 clear
 
-firefoxest="zr0beeun.default-release-1786392580104"
+firefoxest="5bz32xlq.default-release-1787073018443"
 
 cd "/media/eu/Windows_10/Projetos/Front/TesteArquivos/arquivos"
 
@@ -83,7 +83,7 @@ rm -f "/home/eu/.cache/mozilla/firefox/$firefoxest/Cache2/*"
 clear
 
 if [ $iniciar = S ]||[ $iniciar = s ]; then
-	firefox about:memory about:addons; clear; echo "Firefox inicializado, minimize a memória dele."
+	firefox about:addons; clear; echo "Firefox inicializado."
 else
 	clear
 fi
