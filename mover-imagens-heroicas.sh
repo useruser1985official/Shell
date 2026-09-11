@@ -13,7 +13,7 @@ cd ~/Downloads
 ext=`ls | grep jpg`
 
 if [[ $ext ]]; then
-	mv -i *.jpg "/media/eu/Windows_10/Users/eu/Downloads"
+	mv -i *.jpg "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhuma imagem .jpg encontrada."
 fi
@@ -21,7 +21,7 @@ fi
 ext=`ls | grep jpeg`
 
 if [[ $ext ]]; then
-	mv -i *.jpeg "/media/eu/Windows_10/Users/eu/Downloads"
+	mv -i *.jpeg "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhuma imagem .jpeg encontrada."
 fi
@@ -29,7 +29,7 @@ fi
 ext=`ls | grep png`
 
 if [[ $ext ]]; then
-	mv -i *.png "/media/eu/Windows_10/Users/eu/Downloads"
+	mv -i *.png "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhuma imagem .png encontrada."
 fi
@@ -37,7 +37,7 @@ fi
 ext=`ls | grep gif`
 
 if [[ $ext ]]; then
-	mv -i *.gif "/media/eu/Windows_10/Users/eu/Downloads"
+	mv -i *.gif "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhuma imagem .gif encontrada."
 fi

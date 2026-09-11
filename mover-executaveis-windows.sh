@@ -13,7 +13,7 @@ cd ~/Downloads
 ext=`ls | grep exe`
 
 if [[ $ext ]]; then
-	mv *.exe "/media/eu/Windows_10/Users/eu/Downloads"
+	mv *.exe "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhum executável .exe encontrado."
 fi
@@ -21,7 +21,7 @@ fi
 ext=`ls | grep msi`
 
 if [[ $ext ]]; then
-	mv *.msi "/media/eu/Windows_10/Users/eu/Downloads"
+	mv *.msi "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhum instalador .msi encontrado."
 fi
@@ -39,7 +39,7 @@ fi
 ext=`ls | grep zip`
 
 if [[ $ext ]]; then
-	mv *.zip "/media/eu/Windows_10/Users/eu/Downloads"
+	mv *.zip "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhum arquivo .zip encontrado."
 fi

@@ -13,7 +13,7 @@ cd ~/Downloads
 ext=`ls | grep pdf`
 
 if [[ $ext ]]; then
-	mv *.pdf "/media/eu/Windows_10/Users/eu/Downloads"
+	mv *.pdf "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhum arquivo PDF encontrado."
 fi

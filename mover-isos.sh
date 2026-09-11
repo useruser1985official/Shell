@@ -13,7 +13,7 @@ cd ~/Downloads
 ext=`ls | grep iso`
 
 if [[ $ext ]]; then
-	mv *.iso "/media/eu/Windows_10/Users/eu/Downloads"
+	mv *.iso "/run/media/eu/Windows/Projetos/Temporary"
 else
 	echo "Nenhuma imagem ISO encontrada."
 fi

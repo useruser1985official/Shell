@@ -155,7 +155,7 @@ if [ $nav = s ]||[ $nav = S ]; then
 
 	sudo killall skype
 
-	firefoxest="5bz32xlq.default-release-1787073018443"
+	firefoxest="1olf7730.default-release"
 
 	rm -rf ~/.cache/mozilla/firefox/$firefoxest/Cache2/*
 
@@ -194,6 +194,10 @@ if [ $nav = s ]||[ $nav = S ]; then
 	rm -rf ~/.config/opera/ShaderCache/*
 fi
 
+if [ -f /etc/apt/sources.list.d/opera-stable.list ]; then
+	sudo rm /etc/apt/sources.list.d/opera-stable.list
+fi
+
 sudo apt autoclean
 
 sudo apt clean -y
@@ -223,16 +227,6 @@ sudo sync
 sudo sysctl vm.drop_caches=3
 
 sudo sh -c 'echo 3>/proc/sys/vm/drop_caches'
-
-read -p "Deseja rodar o Defrag? [S/N] " opc
-
-clear
-
-if [ $opc = S ]||[ $opc = s ]; then
-	sudo e4defrag /
-else
-	echo "Defrag não Executado!"
-fi
 
 if [ $nav = s ]||[ $nav = S ]; then
 	echo "O cache dos navegadores foram limpos!"

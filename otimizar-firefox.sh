@@ -10,9 +10,9 @@ killall firefox
 
 clear
 
-firefoxest="5bz32xlq.default-release-1787073018443"
+firefoxest="1olf7730.default-release"
 
-cd "/media/eu/Windows_10/Projetos/Front/TesteArquivos/arquivos"
+cd "/run/media/eu/Windows/Projetos/Front/TesteArquivos/arquivos"
 
 sudo cp -f prefs.js "/home/eu/.config/mozilla/firefox/$firefoxest"
 

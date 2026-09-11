@@ -8,6 +8,6 @@ else
 	exit
 fi
 
-cp -rf ~/Aplicações/Bash\ Scripts "/media/eu/Windows_10/Users/eu/Downloads"
+cp -rf ~/Aplicações/Bash\ Scripts "/run/media/eu/Windows/Projetos/Temporary"
 
 echo "Operação Concluída com Êxito!"
