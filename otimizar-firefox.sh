@@ -10,7 +10,7 @@ killall firefox
 
 clear
 
-firefoxest="1olf7730.default-release"
+firefoxest="33pq7wlo.default-release-1792420917912"
 
 cd "/run/media/eu/Windows/Projetos/Front/TesteArquivos/arquivos"
 
